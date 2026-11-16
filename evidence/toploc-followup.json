@@ -1,0 +1,99 @@
+{
+  "network": "FLOP devnet",
+  "genesis": "0x99c172c095340ace980631f9123544c6bebd4839f3437e463533422d8be2d631",
+  "hardware": "Mac mini M4, 24 GB unified memory",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "precision": "BF16",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "modelHash": "0x1a52c1abe781db051e70ae357f72bb70161ca0c092df0b618f22a9292ba63306",
+  "workerVersion": "0.1.358",
+  "workerSourceModified": false,
+  "backend": "experimental native MLX same-pass final-norm capture",
+  "daHelper": "official Linux amd64 DA binary in a local SSD-backed Lima VM, with Rosetta",
+  "miner": "5GHcQ6Mb7iVvoiEqUFFJRti4rcDyuoGMLZ5Wfsniw78LhkPt",
+  "agent": "5DVDKBptv3YK638EwVxhaoJizDU8PcEdpwvvPQwWnqBdhB1t",
+  "referenceCalibration": {
+    "verifiedTasks": 72,
+    "submittedTasks": 64,
+    "acceptedCapGflopsPerSec": 100,
+    "assurance": "Soft",
+    "txHash": "0xf8ef6766ec569e306f70d2934e9ad00ae10e5ea791853d26aec67377ca226837",
+    "scope": "reference/simulator calibration, not an independent physical GPU benchmark"
+  },
+  "paidSelfTest": {
+    "channelId": "0x2d2466ad2889bbc9a3596072ccf08f7108367259772425a278d1216f9ded84a2",
+    "settleTx": "0x40c8fa08ff7bb11bf132fc9056851ba86a85085beb3c5bac62fbf614b92c1189",
+    "settlementBlock": "0xbdf019c4791136e0631fd3fa7d9da8a610e4eca64df6fd8252ea4db55d49d5d4",
+    "settlementBlockNumber": 3904228,
+    "minerPaidRaw": "990000000000000000",
+    "minerPaidTestFlop": "0.99",
+    "promptTokens": 34,
+    "completionTokens": 8,
+    "aggregateGn": "41",
+    "receiptVersion": "V3",
+    "toplocEvidence": {
+      "commitmentRef": "0x57c5f105cffb6df9bd40ee5d631af03be56bff2909e8c86a3565b86db4fe6f8b",
+      "turnsCommitted": 1,
+      "lastSubmitted": 3904219
+    },
+    "toplocEvidenceBlockHash": "0x18c73a8d94238d61d243f5cdbb024f7c6427733631815a6bfa4e77cf8701af47",
+    "toplocMarkerClearedAfterClose": true,
+    "independentDaRetrieval": [
+      {
+        "kind": "activation",
+        "commitment": "0xb5806cb787ef5741b3039ec9cd7b30d1e160016a11e11d369a25c2177aee8df7",
+        "sizeBytes": 133,
+        "sha256": "4dd7621bcc4911f5632c914edad46559c5453319b8462ff905e24413077d16d7",
+        "passed": true,
+        "finalizedBlock": 3904025,
+        "assignmentHash": "0x7a812066f4392be2a3eff514a5639468b9abba11cc8aac09a367e57b157800ec",
+        "blake2Verified": true,
+        "sha256Verified": true,
+        "canonicalBytesMatched": true
+      },
+      {
+        "kind": "transcript",
+        "commitment": "0x85aa930610bbf6f2cb2e63b755578dab25a91d03d98e25e468a7ea6ed11ba1df",
+        "sizeBytes": 391,
+        "sha256": "5c3b5007396047a59f27a55550aba43fa758a3d98f1eb0b9e769d15927653842",
+        "passed": true,
+        "finalizedBlock": 3903981,
+        "assignmentHash": "0x7a812066f4392be2a3eff514a5639468b9abba11cc8aac09a367e57b157800ec",
+        "blake2Verified": true,
+        "sha256Verified": true,
+        "canonicalBytesMatched": true
+      }
+    ],
+    "signedClaimMatched": true,
+    "channelClosed": true
+  },
+  "firstFullProofAttempt": {
+    "channelId": "0x217b78efcbbf989878d7574bf78ee11652b7c375e19151d3172bd59d53e471e7",
+    "result": "AttestationStale after slow DA/RPC processing exceeded the 600-block lifetime; no miner payment",
+    "refundTx": "0x2d4b1f955fd10ab3192e8aa93b185430b2244c74d126f3f46b035f68a99e20f8",
+    "refundedRaw": "1000000000000000000"
+  },
+  "secondAttemptChanges": {
+    "maxDurationBlocks": 3600,
+    "cooperativeResponseDeadlineMs": 1500000,
+    "verificationRules": "same model/receipt/TOPLOC/DA/finality checks; no disabled proof gates",
+    "operatorRecovery": {
+      "originalRegistrationTx": "0xee8f8affc0adc95757536661b4f0131e0cf65e32faaebafa32ccc1b0c2bb2dc1",
+      "originalOutcome": "expired_without_inclusion",
+      "replacementRegistrationTx": "0x4a372084f2c35e0c0570a52ad7ce8f9adf8257c17a584e03e730be0af95345c2",
+      "sameCallAndChannel": true,
+      "replacementMortalPeriodBlocks": 512,
+      "preservedCooperativeClaim": true,
+      "scope": "operator-assisted registration and cooperative settlement through the official SDK; not an unattended installer qualification",
+      "finalSettlementViaOfficialSdk": true,
+      "finalTransactionMortalPeriodBlocks": 512
+    }
+  },
+  "limitations": [
+    "self-payment, not outside customer earnings",
+    "no independent validator model reexecution established",
+    "activation payload is the stock worker lanes-only format; V3 receipt separately commits native token IDs",
+    "no official Apple/MLX testnet eligibility or reward guarantee established"
+  ],
+  "additionalGpuRentalUsd": 0
+}

@@ -6,7 +6,9 @@
 
 agent ve miner benim hesaplarımdı. bu bir işlev testi. **dış müşteri geliri, testnet ödül uygunluğu veya mainnet uyumluluğu kanıtlamıyor.** denenen yol legacy SOFT; **TOPLOC kapalıydı**.
 
-## sonuçlar
+**takip denemesi:** operatör desteğiyle **TOPLOC açık** ayrı bir işlev testi tamamlandı; bağımsız DA geri okuması ve 0.99 test FLOP ödeme kesinleşti. [ayrıntılar ve sınırlar](docs/toploc-followup.tr.md). aşağıdaki ilk legacy kayıt korundu.
+
+## ilk legacy SOFT denemenin sonuçları
 
 | ölçüm | gözlem | neyi gösteriyor? |
 |---|---:|---|
@@ -49,7 +51,7 @@ bu depo bir deney kaydı; çalıştırılabilir yerel benchmark ve salt okunur k
 
 ## henüz doğrulanmayanlar
 
-Apple GPU üzerinde TOPLOC, testnet kabulü ve ödülleri, büyük modeller, uzun süreli performans, dış müşteri talebi ve kârlılık bu denemeyle doğrulanmadı. legacy devnette ödeme almak bu soruların cevabı değil. harcama yapmadan veya miner'ı sürekli açık bırakmadan önce güncel sürümü ve ağ kurallarını kontrol et.
+Apple/MLX donanımında bağımsız validator tekrar çalıştırması, testnet kabulü ve ödülleri, büyük modeller, uzun süreli performans, dış müşteri talebi ve kârlılık henüz doğrulanmadı. aynı geçişte aktivasyon kaydı ve DA kanıtı ayrı takip denemesinde yer alıyor. legacy devnette ödeme almak bu soruların cevabı değil. harcama yapmadan veya miner'ı sürekli açık bırakmadan önce güncel sürümü ve ağ kurallarını kontrol et.
 
 ## kaynaklar
 

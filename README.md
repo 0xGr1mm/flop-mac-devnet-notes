@@ -6,7 +6,9 @@ I ran an AI-assisted FLOP devnet test on my **Mac mini M4, 24 GB unified memory*
 
 The agent and miner were both mine. This was a functional self-test. **It does not establish external earnings, testnet reward eligibility, or mainnet compatibility.** The tested path was legacy SOFT with **TOPLOC disabled**.
 
-## Results
+**Follow-up:** I completed a separate operator-assisted **TOPLOC-enabled** self-test, including independent DA retrieval and a finalized 0.99 test FLOP payment. [Full follow-up and limitations](docs/toploc-followup.md). The initial legacy result below remains unchanged.
+
+## Initial legacy SOFT results
 
 | Measurement | Observed result | Scope |
 |---|---:|---|
@@ -49,7 +51,7 @@ This repository is a case study with a runnable local benchmark and a read-only 
 
 ## What remains open
 
-Apple GPU TOPLOC capture, testnet acceptance, reward eligibility, larger models, sustained throughput, outside demand and profitability were not established. A successful legacy devnet settlement cannot answer those questions. Recheck the release and network rules before spending money or leaving a miner running.
+Independent validator replay of the Apple/MLX hardware cell, testnet acceptance, reward eligibility, larger models, sustained throughput, outside demand and profitability remain unestablished. See the separate follow-up for same-pass capture and DA evidence. A successful legacy devnet settlement cannot answer those questions. Recheck the release and network rules before spending money or leaving a miner running.
 
 ## References
 
