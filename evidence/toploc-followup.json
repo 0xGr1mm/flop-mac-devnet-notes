@@ -95,5 +95,13 @@
     "activation payload is the stock worker lanes-only format; V3 receipt separately commits native token IDs",
     "no official Apple/MLX testnet eligibility or reward guarantee established"
   ],
-  "additionalGpuRentalUsd": 0
+  "additionalGpuRentalUsd": 0,
+  "postTestStatus": {
+    "minerDeregistered": true,
+    "retirementTx": "0x30f5372995f4877ce40ba38ecf9a42d411a8615a0e4b2e8eb43731b39caf9d22",
+    "retirementBlock": "0x6d233a6545db48aa3b7f0f12a3c46f7072ae4797274e3cee7034d2dd35c7f6c5",
+    "localServicesStopped": true,
+    "localVmStopped": true,
+    "keysAndEvidencePreserved": true
+  }
 }

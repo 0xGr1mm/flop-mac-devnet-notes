@@ -23,6 +23,10 @@ The first full-proof attempt published its evidence but settlement was rejected 
 
 I opened the second channel with a 3600-block lifetime and bounded its escrow to 1 test FLOP. A transcript-registration transaction then expired without inclusion. I checked its entire 64-block canonical validity range, completed the identical registration with the official SDK using a longer transaction validity period, and completed the preserved cooperative close through the official SDK. No third channel or replacement identity was created. The final settlement was checked against the exact signed claim, finalized event and closed channel.
 
+## Post-test shutdown
+
+After completing the test, I deregistered this miner and stopped the local worker, model service, tunnel and DA VM. Retirement finalized in transaction `0x30f5372995f4877ce40ba38ecf9a42d411a8615a0e4b2e8eb43731b39caf9d22`. The keys and audit evidence were retained privately. This is a historical experiment, not a currently running miner.
+
 ## Limits
 
 The stock worker emitted the lanes-only activation format; the V3 receipt separately commits the actual native token IDs. A published commitment and a paid self-test do not establish cross-hardware numerical equivalence, sampling replay, or an approved Apple/MLX hardware cell. See the [Apple Silicon discussion](https://github.com/flop-labs/network/issues/268) and [official miner guide](https://docs.flop.network/docs/run-miner).

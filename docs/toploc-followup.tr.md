@@ -23,6 +23,10 @@ ilk tam kanıt denemesinde veriler yayınlandı, fakat yavaş RPC/DA işlemleri 
 
 ikinci kanalı 3600 blokluk pencere ve yine en fazla 1 test FLOP emanetle açtım. bu kez zincire girmeden geçerliliği dolan döküm kayıt işleminin 64 blokluk kanonik aralığını kontrol ettim. aynı kaydı resmî SDK üzerinden daha uzun işlem geçerliliğiyle tamamladım; son TOPLOC ve cooperative ödeme işlemlerini aynı mühürlü kayıt ve özgün agent imzasıyla resmî SDK üzerinden gönderdim. üçüncü kanal veya yeni kimlik açılmadı. kesin ödeme, özgün imzalı kapanış iddiası ve zincirdeki olayla karşılaştırıldı.
 
+## test sonrası kapatma
+
+test tamamlandıktan sonra miner’ı devnetten çıkardım; worker, model servisi, tünel ve yerel DA VM’sini kapattım. çıkış işlemi kesinleşti: `0x30f5372995f4877ce40ba38ecf9a42d411a8615a0e4b2e8eb43731b39caf9d22`. anahtarlar ve audit kanıtları özel yedekte korundu. bu kayıt geçmiş denemeyi anlatıyor; miner şu an çalışmıyor.
+
 ## sınırlar
 
 worker aktivasyon için lanes-only biçimi kullandı; V3 makbuzu gerçek token kimliklerini ayrıca bağlıyor. bu sonuç, farklı donanımların sayısal eşdeğerliğini, sampling replay kontrolünü veya Apple/MLX donanım hücresinin resmî kabulünü göstermiyor. [Apple Silicon tartışması](https://github.com/flop-labs/network/issues/268) ve [resmî miner rehberi](https://docs.flop.network/docs/run-miner) bu ayrım için önemli.
