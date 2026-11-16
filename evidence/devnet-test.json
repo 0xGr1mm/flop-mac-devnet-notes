@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "experimentDate": "2026-11-16",
+  "network": "FLOP devnet",
+  "genesisHash": "0x99c172c095340ace980631f9123544c6bebd4839f3437e463533422d8be2d631",
+  "device": {
+    "name": "Mac mini M4",
+    "gpuCores": 10,
+    "unifiedMemoryGB": 24
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "precision": "BF16",
+    "registeredRoot": "0x1a52c1abe781db051e70ae357f72bb70161ca0c092df0b618f22a9292ba63306"
+  },
+  "miner": "5CeorJnvyF5sgjpk2AMAnutGXMCUsuXuNvpJjbqvD31A193U",
+  "localBenchmark": {
+    "promptTokens": 41,
+    "completionTokens": 128,
+    "generationTokensPerSecond": 85.828,
+    "mlxPeakMemoryGB": 1.057,
+    "repetitions": 1
+  },
+  "calibration": {
+    "txHash": "0x60bcfd2771fa5dd9ff145edc621171bbe7b253cb8915bc961499db2416f24a12",
+    "blockHash": "0x5eda7bdea1109d36a0021c6df9330f6ee7b32e3ec36a18f29fd5f61d80ec04d3",
+    "acceptedCapacityGflopsPerSecond": 100,
+    "assuranceTier": "Soft",
+    "calibrationVersion": 1,
+    "verifiedJobs": 64,
+    "nature": "devnet reference/simulator calibration; deliberately conservative capacity, not independent GPU throughput"
+  },
+  "settlement": {
+    "txHash": "0x21a23fff96f6f4b63b2b8012b1bc496996642f757d69f70ac31d99783ce6fea0",
+    "blockHash": "0x1d16cc05ef033ba96d4fa6e4ae725bdaacc0e76315271de7b82791772839a322",
+    "blockNumber": 3852620,
+    "extrinsicIndex": 4,
+    "channelId": "0x0639931180127b17f85b074153081e8d74864d68770eb779df8e53a9165d286d",
+    "minerPaidRaw": "990000000000000000",
+    "minerPaidTestFlop": "0.99",
+    "aggregateGn": "41",
+    "cooperative": true,
+    "completionTokens": 8,
+    "selfTest": true,
+    "toplocEnabled": false
+  },
+  "firstAttemptRefund": {
+    "txHash": "0xbf364175d5c386f83d62d412e66b2ce3916ce0fe2409087a25ec7f0389f2e5ca",
+    "blockHash": "0x4cf31b256c605e437baa068d5fc13f8c5136df8c7a6156dc12d135e7aa51dcb5",
+    "channelId": "0x38781e0710cc3f73ee20a42ff895b6d2e70e6ce840b96d1e22c2b72359a2a824",
+    "refundedRaw": "1000000000000000000"
+  },
+  "retirement": {
+    "txHash": "0x494567468678136fefd02c31d5011c00c9b62d48d9a07e885f4ab4c6185a8009",
+    "blockHash": "0xe768e0c5138976e78654977a10d570355ca8c5b39a10c756f49e2fc52f98931f",
+    "sponsorUnlockBlock": 4457569
+  },
+  "software": {
+    "node": "22.22.3",
+    "python": "3.11.15",
+    "mlx": "0.32.4",
+    "mlxLm": "0.32.2",
+    "sdk": "0.5.1",
+    "worker": "0.1.336",
+    "runtime": 1014020
+  },
+  "limitations": [
+    "Legacy SOFT path with TOPLOC disabled.",
+    "Self-payment is not external income or a reward eligibility proof.",
+    "Accepted capacity is not tokens/second or an independent Apple GPU benchmark.",
+    "Testnet and mainnet participation are not established by this experiment."
+  ],
+  "stateAtEnd": {
+    "minerRetired": true,
+    "servicesStopped": true,
+    "additionalGpuRentalUsd": 0
+  },
+  "publicationRecheck": {
+    "generationTokensPerSecond": 61.678,
+    "promptTokens": 41,
+    "completionTokens": 128,
+    "mlxPeakMemoryGB": 1.057,
+    "repetitions": 1,
+    "note": "Second short run of the public benchmark script; observed performance varied. Neither run establishes sustained throughput."
+  }
+}

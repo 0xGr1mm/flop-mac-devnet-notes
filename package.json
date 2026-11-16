@@ -1,0 +1,11 @@
+{
+  "name": "flop-mac-devnet-notes",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "verify": "node scripts/verify-devnet.mjs",
+    "test": "node --test scripts/verification.test.mjs"
+  },
+  "dependencies": { "@polkadot/api": "17.0.2" }
+}
